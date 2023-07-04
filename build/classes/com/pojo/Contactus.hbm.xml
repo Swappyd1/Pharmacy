@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 10, 2019 5:01:50 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.pojo.Contactus" table="contactus" catalog="pharmaproject">
+        <id name="cid" type="java.lang.Integer">
+            <column name="cid" />
+            <generator class="identity" />
+        </id>
+        <property name="fname" type="string">
+            <column name="fname" length="100" />
+        </property>
+        <property name="lname" type="string">
+            <column name="lname" length="100" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" />
+        </property>
+        <property name="message" type="string">
+            <column name="message" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>
